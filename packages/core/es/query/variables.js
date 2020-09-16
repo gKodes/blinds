@@ -1,7 +1,8 @@
-import { customRandom, customAlphabet, urlAlphabet } from 'nanoid';
+import { customAlphabet } from 'nanoid';
+
 const nanoid = customAlphabet(
   'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
-  10
+  4
 );
 
 const SYM_INDEX = Symbol.for('index');

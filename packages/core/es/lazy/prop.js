@@ -1,5 +1,3 @@
-const { func } = require('prop-types');
-
 export default function prop(source, propName, fn) {
   Object.defineProperty(source, propName, {
     get: function () {

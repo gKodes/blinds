@@ -1,0 +1,3 @@
+describe('lazy/prop', () => {
+  it('', () => {});
+});

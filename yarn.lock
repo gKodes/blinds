@@ -2057,21 +2057,21 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@resolvejs/babel@^0.0.8-alpha.0":
-  version "0.0.8-alpha.0"
-  resolved "https://registry.yarnpkg.com/@resolvejs/babel/-/babel-0.0.8-alpha.0.tgz#4fc686b36d430ad756c3f5f1fb247e8e55edd7f2"
-  integrity sha512-wsn+eafBVmENZsTnsd7GH7Q6ry86mkxf+VCz/r4ixch7iSLkxrIm2TrWCgoIyA9DrX5uxbPIq+IKDv4OIKutlg==
+"@resolvejs/babel@^0.0.11-alpha.0":
+  version "0.0.11-alpha.0"
+  resolved "https://registry.yarnpkg.com/@resolvejs/babel/-/babel-0.0.11-alpha.0.tgz#c7b658c3006db97d6833622f0bbcd6a3b3f127c1"
+  integrity sha512-PvnJyO3nlsYK3YtbBu3eQuQVZhVkztXWSFSIJoBSn9jCD/mvqXHr9bGLxQzFPOlC2QagZtz+o5x61KkcNmbKTg==
   dependencies:
-    "@resolvejs/config-up" "^0.0.8-alpha.0"
-    "@resolvejs/core" "^0.0.8-alpha.0"
+    "@resolvejs/config-up" "^0.0.11-alpha.0"
+    "@resolvejs/core" "^0.0.11-alpha.0"
     cosmiconfig "^6.0.0"
     debug "^4.1.1"
     yargs "^15.4.0"
 
-"@resolvejs/config-up@^0.0.8-alpha.0":
-  version "0.0.8-alpha.0"
-  resolved "https://registry.yarnpkg.com/@resolvejs/config-up/-/config-up-0.0.8-alpha.0.tgz#354ad09d4ff8e3bcda3ed5dd893ffa3589a02341"
-  integrity sha512-ZVIkDNDdADMDgxjfI9xTB0WYTyTWGbygQ5usZt8Y8ZGU43LpDsBAEGK1JExZom9DYE6KscVxMMkQFNt12oanFQ==
+"@resolvejs/config-up@^0.0.11-alpha.0":
+  version "0.0.11-alpha.0"
+  resolved "https://registry.yarnpkg.com/@resolvejs/config-up/-/config-up-0.0.11-alpha.0.tgz#07f74de81a0ff85fc5651ccd5e6fe716edbb6f4c"
+  integrity sha512-7f7cIoZItMbpR7Qq9ibTmvEqpqIsTO0T4kLNp5YipGtCVpsWBrflgDdgxoscbei3qilkCHtsk19Gy2NEFoKjtQ==
   dependencies:
     cosmiconfig "^6.0.0"
     debug "^4.1.1"
@@ -2080,20 +2080,10 @@
     path-exists "^4.0.0"
     yaml "^1.10.0"
 
-"@resolvejs/core@^0.0.8-alpha.0":
-  version "0.0.8-alpha.0"
-  resolved "https://registry.yarnpkg.com/@resolvejs/core/-/core-0.0.8-alpha.0.tgz#2c692879ba7cfa2541b2f000a6fdfce283238431"
-  integrity sha512-9XPw4JM7G7BbNobcCLqej72LbNf5YcsAJE5z6YlfdZ2jvQmjw06RixEPVSMpu336D9R3apjQPwjidFJ5VZtUFg==
-  dependencies:
-    cosmiconfig "^6.0.0"
-    debug "^4.1.1"
-    is-builtin-module "^3.0.0"
-    path-type "^4.0.0"
-
-"@resolvejs/core@^0.0.9-alpha.0":
-  version "0.0.9-alpha.0"
-  resolved "https://registry.yarnpkg.com/@resolvejs/core/-/core-0.0.9-alpha.0.tgz#11ac097dca02812a278de6428e26719e1e7ff705"
-  integrity sha512-q5y0psttyfprZn2uKHvGtKuS25m3AouZX3ZqmdhxJePaNdTTUAGw9VSVDFLbd4ejkuX7LnmdInGsUzwoLAguZA==
+"@resolvejs/core@^0.0.11-alpha.0":
+  version "0.0.11-alpha.0"
+  resolved "https://registry.yarnpkg.com/@resolvejs/core/-/core-0.0.11-alpha.0.tgz#9072969a4561d3fb0513c64922d513d35f2d3457"
+  integrity sha512-YU3A9aQDtJcbukp0SgMEKEaDmsH/0ELTDGOtHotGGNQTE30rkeu3ixw/6UrIGKAYuiH8ztV6d3956AGt7jenbA==
   dependencies:
     cosmiconfig "^6.0.0"
     debug "^4.1.1"
@@ -3833,12 +3823,12 @@ eslint-import-resolver-node@^0.3.3:
     debug "^2.6.9"
     resolve "^1.13.1"
 
-eslint-import-resolver-resolvejs@^0.0.9-alpha.0:
-  version "0.0.9-alpha.0"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-resolvejs/-/eslint-import-resolver-resolvejs-0.0.9-alpha.0.tgz#ed2c0bf774ae4c84c250d76ece5ae499187eb0fe"
-  integrity sha512-oBXkeJxZhgh8OGMcIUNI0jVfnXKa65DQm4AXxcHHL9pkFsfDUrQpyIWNI/6ud9LZTmBs3aNPDBth5+0EhDfL4Q==
+eslint-import-resolver-resolvejs@^0.0.11-alpha.0:
+  version "0.0.11-alpha.0"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-resolvejs/-/eslint-import-resolver-resolvejs-0.0.11-alpha.0.tgz#f1d4b48c072624cf3986a7e6ffcb915b1520ab56"
+  integrity sha512-4ZGrZv0pHhVcYAMXylF7i7wRrtJCtgdpjKnm7TerT3kEucD63zge0o+Zz6XjkWSZrP14G1pyNCwRb88Dqp9cqA==
   dependencies:
-    "@resolvejs/core" "^0.0.9-alpha.0"
+    "@resolvejs/core" "^0.0.11-alpha.0"
     builtin-modules "^3.1.0"
     debug "^4.1.1"
     find-node-modules "^2.1.0"

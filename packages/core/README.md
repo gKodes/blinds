@@ -1,6 +1,6 @@
 # Blinds
 
-Blinds OGM/ORM Helps you intract with your data source/base in Object Oriented Why and make it easy to create and manage relations
+Blinds OGM/ORM intract with your data source/base in Object Oriented why and make it easy to create and manage relations
 
 ## Usage
 
