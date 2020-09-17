@@ -19,8 +19,7 @@
     "build": "BABEL_ENV=example babelc es",
     "dev": "NODE_ENV=development BABEL_ENV=example node-babel ./es/models/",
     "dev:con": "NODE_ENV=development BABEL_ENV=example node-babel ./es/neo4j",
-    "node-babel": "NODE_ENV=development BABEL_ENV=example node-babel",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "node-babel": "NODE_ENV=development BABEL_ENV=example node-babel"
   },
   "engines": {
     "node": ">=9.0.0"
