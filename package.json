@@ -5,7 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint packages/*/es"
+    "lint": "eslint packages/*/es",
+    "clean": "rimraf node_modules packages/*/node_modules",
+    "lerna": "lerna"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -33,6 +35,7 @@
     "is-ci-cli": "^2.1.2",
     "jest": "^26.4.2",
     "lerna": "^3.22.1",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2"
   }
 }

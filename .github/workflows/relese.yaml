@@ -1,0 +1,55 @@
+on: 
+  release:
+    types: [published]
+name: Build | Test | Publish
+
+env:
+  NODE_EVN: 12
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        clean: true
+        fetch-depth: 0
+    - name: Setup Node ${{ env.NODE_EVN }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_EVN }}
+        registry-url: https://registry.npmjs.org/  
+    - name: Install
+      run: yarn install
+    - name: Unit Tests
+      run: yarn run lerna run test -- -- --coverage
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+    - name: Lerna Update Version
+      run: |
+        yarn lerna bootstrap
+        yarn run lerna version --no-push --no-git-tag-version --yes ${{ steps.get_version.outputs.VERSION }}
+    - name: Setup GitHub User
+      run: |
+        git config --local user.email "bot@action.build"
+        git config --local user.name "GitHub Action Publish"
+        git commit -am "Release ${{ steps.get_version.outputs.VERSION }}"
+    - name: Publish To NPM
+      run: |
+        yarn lerna publish from-package --no-push --no-git-tag-version --yes
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+    # - name: Publish To GitHub
+    #   uses: actions/setup-node@v1
+    #   with:
+    #     node-version: 12
+    #     registry-url: 'https://npm.pkg.github.com'
+    #     scope: '@resolvejs'
+    # - run: yarn lerna publish from-package --registry https://npm.pkg.github.com --no-push --no-git-tag-version --yes
+    #   env:
+    #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push changes # push the output folder to your repo
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: false
