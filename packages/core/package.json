@@ -1,13 +1,22 @@
 {
   "name": "@blinds/core",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "Blind core module used for Object Based OGM ORM for Node.JS",
   "author": "Kamalakar Gadireddy",
   "homepage": "https://github.com/gKodes/blagjs",
   "license": "MIT",
   "main": "index.js",
   "type": "module",
-  "keywords": [ "OGM", "ORM", "object relational mapper", "nodejs", "neo4j", "es6", "babel", "class" ],
+  "keywords": [
+    "OGM",
+    "ORM",
+    "object relational mapper",
+    "nodejs",
+    "neo4j",
+    "es6",
+    "babel",
+    "class"
+  ],
   "exports": {
     "./": {
       "import": "./es",
