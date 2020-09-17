@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "Kamalakar Gadireddy <kgadireddy@bills.com>",
   "homepage": "",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/babel-plugin.js",
   "module": "dist/babel-plugin.module.js",
   "directories": {

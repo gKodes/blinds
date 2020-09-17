@@ -4,7 +4,7 @@
   "description": "Blind core module used for Object Based OGM ORM for Node.JS",
   "author": "Kamalakar Gadireddy",
   "homepage": "https://github.com/gKodes/blagjs",
-  "license": "ISC",
+  "license": "MIT",
   "main": "index.js",
   "type": "module",
   "keywords": [ "OGM", "ORM", "object relational mapper", "nodejs", "neo4j", "es6", "babel", "class" ],
